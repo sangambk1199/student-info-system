@@ -1,1 +1,1 @@
-# student-info-system
+# course-work-1-sangambk12

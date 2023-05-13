@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Student_Information_System.AddStudentControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Student_Information_System"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="594" Height="395">
+    <Grid x:Name="addStudentControl" Background="White" Width="594" Height="395">
+        <TextBox x:Name="stuIDTB" HorizontalAlignment="Left" Height="29" Margin="40,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label x:Name="stuIDLabel" Content="Student ID" HorizontalAlignment="Left" Margin="40,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.263" FontFamily="Arial" Padding="0" Height="15" FontSize="10" Foreground="#FF6E6E6E" FontWeight="Bold"/>
+        <Label Content="Add New Student" HorizontalAlignment="Left" Margin="40,32,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="stuNameTB" HorizontalAlignment="Left" Height="29" Margin="281,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label x:Name="stuNameLabel_Copy" Content="Full Name" HorizontalAlignment="Left" Margin="281,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.263" FontFamily="Arial" Padding="0" Height="15" FontSize="10" Foreground="#FF6E6E6E" FontWeight="Bold"/>
+        <TextBox x:Name="stuAddressTB" HorizontalAlignment="Left" Height="29" Margin="40,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label x:Name="stuAddressLabel" Content="Address" HorizontalAlignment="Left" Margin="40,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.263" FontFamily="Arial" Padding="0" Height="15" FontSize="10" Foreground="#FF6E6E6E" FontWeight="Bold"/>
+        <TextBox x:Name="stuPhoneTB" HorizontalAlignment="Left" Height="29" Margin="281,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label x:Name="stuPhoneLabel" Content="Phone Number" HorizontalAlignment="Left" Margin="281,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.263" FontFamily="Arial" Padding="0" Height="15" FontSize="10" Foreground="#FF6E6E6E" FontWeight="Bold"/>
+        <Label x:Name="stuCourseLabel" Content="Course Enroll" HorizontalAlignment="Left" Margin="40,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.263" FontFamily="Arial" Padding="0" Height="15" FontSize="10" Foreground="#FF6E6E6E" FontWeight="Bold"/>
+        <ComboBox x:Name="stuCourseCB" HorizontalAlignment="Left" Margin="40,234,0,0" VerticalAlignment="Top" Width="198" Height="28" BorderBrush="#FF171717" Background="{x:Null}">
+            <ComboBoxItem x:Name="comboItemBIT" Content="BIT" HorizontalAlignment="Left" Width="196.8"/>
+            <ComboBoxItem x:Name="comboItemBBA" Content="BBA" HorizontalAlignment="Left" Width="196.8"/>
+            <ComboBoxItem x:Name="comboItemBCA" Content="BCA" HorizontalAlignment="Left" Width="196.8"/>
+            <ComboBoxItem x:Name="comboItemBBS" Content="BBS" HorizontalAlignment="Left" Width="196.8"/>
+        </ComboBox>
+        <Button x:Name="submitStudentBtn" Content="Add Student" HorizontalAlignment="Left" Margin="40,293,0,0" VerticalAlignment="Top" Width="198" Height="34" FontFamily="Arial" Background="#FF3E206D" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" Click="submitStudentBtn_Click" Cursor="Hand"/>
+        <Label x:Name="registrationDateLabel" Content="Registration Date" HorizontalAlignment="Left" Margin="281,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.263" FontFamily="Arial" Padding="0" Height="15" FontSize="10" Foreground="#FF6E6E6E" FontWeight="Bold"/>
+        <DatePicker x:Name="registrationDP" HorizontalAlignment="Left" Margin="281,234,0,0" VerticalAlignment="Top" Height="29" Width="198"/>
+    </Grid>
+</UserControl>

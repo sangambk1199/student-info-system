@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Student_Information_System.StudentDetailControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Student_Information_System"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="594" Height="395">
+    <Grid Background="White" Width="594" Height="395" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Label Content="Student Details" HorizontalAlignment="Left" Margin="40,32,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
+        <DataGrid x:Name="studentDetailTable" HorizontalAlignment="Left" Height="235" Margin="40,97,0,0" VerticalAlignment="Top" Width="520" ItemsSource="{Binding}">
+
+        </DataGrid>
+        <Button x:Name="refreshStudentBtn" Content="Refresh" HorizontalAlignment="Left" Margin="431,32,0,0" VerticalAlignment="Top" Width="129" Height="34" FontFamily="Arial" Background="#FF3E206D" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" Click="refreshStudentBtn_Click" Cursor="Hand"/>
+        <Label Content="Sort By:" HorizontalAlignment="Left" Margin="380,349,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="sortByName" Content="Name" HorizontalAlignment="Left" Margin="448,355,0,0" VerticalAlignment="Top" GroupName="sortGroup" Checked="sortByName_Checked"/>
+        <RadioButton x:Name="sortByDate" Content="Date" HorizontalAlignment="Left" Margin="516,355,0,0" VerticalAlignment="Top" GroupName="sortGroup" Checked="sortByDate_Checked"/>
+    </Grid>
+</UserControl>
